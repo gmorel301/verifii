@@ -14,7 +14,6 @@ $message = null;
 
 try {
     if ($resultado = $conn->query("INSERT INTO usuarios(ime,nom,unlo) VALUES('$imei','$nombre','$estado')"))
-        ;
     {
         $result = true;
         $message = "¡Genial! se agregó correctamente";
@@ -24,7 +23,7 @@ try {
         // echo "$resultado";
     } 
 
-} catch(Exception) {
+} catch(Exception $e) {
     $result = false;
     $message = "Este imei ya existe, intente con otro";
 
