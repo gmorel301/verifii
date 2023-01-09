@@ -134,18 +134,11 @@ if($result != null & $message != null)
 {
     echo "
     <script>
-        alertify.set('notifier','position', 'bottom-right');
-        alertify.success('$message');
-    </script>
-    ";
-    echo "
-    <script>
         alert('$message');
     </script>
     ";
-    
-} else {
 
+} else {
     echo "
     <script>
         alert('$message');

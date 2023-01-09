@@ -4,10 +4,6 @@
     $nombre 	= $_POST['txtnombre'];
     $estado	= $_POST['txtestado'];
 
-    
-    // $resultado = mysqli_query($conn, "INSERT INTO usuarios(ime,nom,unlo) VALUES('$imei','$nombre','$unlocked')");
-    // echo '$resultado';
-
 $resultado = null;
 $result = null;
 $message = null;
@@ -20,7 +16,6 @@ try {
 
         header("Location:index.php?result=$result&message=$message"); 
 
-        // echo "$resultado";
     } else {
         $result = false;
         $message = "Este imei ya existe, intente con otro";
@@ -31,7 +26,5 @@ try {
 } catch(Exception $e) {
    echo $e;
 }
-
-    // header("Location:index.php"); 
 
 ?>
