@@ -1,0 +1,6 @@
+ echo "
+    <script>
+        alertify.set('notifier','position', 'bottom-right');
+        alertify.success('$message');
+    </script>
+    ";

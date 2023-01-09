@@ -21,13 +21,15 @@ try {
         header("Location:index.php?result=$result&message=$message"); 
 
         // echo "$resultado";
-    } 
+    } else {
+        $result = false;
+        $message = "Este imei ya existe, intente con otro";
+    
+        header("Location:index.php?result=$result&message=$message"); 
+    }
 
 } catch(Exception $e) {
-    $result = false;
-    $message = "Este imei ya existe, intente con otro";
-
-    header("Location:index.php?result=$result&message=$message"); 
+   echo $e;
 }
 
     // header("Location:index.php"); 

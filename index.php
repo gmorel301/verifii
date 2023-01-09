@@ -126,9 +126,6 @@ function cancelarform() {
 </html>
 
 <?php
-// $resultado = null;
-// $result = null;
-// $message = null;
 
 $result = $_GET['result'];
 $message = $_GET['message'];
@@ -141,11 +138,17 @@ if($result != null & $message != null)
         alertify.success('$message');
     </script>
     ";
-} else {
     echo "
     <script>
-        alertify.set('notifier','position', 'bottom-right');
-        alertify.error('$message');
+        alert('$message');
+    </script>
+    ";
+    
+} else {
+
+    echo "
+    <script>
+        alert('$message');
     </script>
     ";
 }
