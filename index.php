@@ -101,8 +101,7 @@ function cancelarform() {
                 <td>Estado</td>
                 
                 
-                <td><select name="txtestado" onChange="combo(this, 'demo')">
-<option>Estado</option>                    
+                <td><select name="txtestado" onChange="combo(this, 'demo')">                   
 <option>Loked</option>
 <option>Unlocked</option>
 </select></td>
@@ -127,9 +126,9 @@ function cancelarform() {
 </html>
 
 <?php
-$resultado = null;
-$result = null;
-$message = null;
+// $resultado = null;
+// $result = null;
+// $message = null;
 
 $result = $_GET['result'];
 $message = $_GET['message'];
